@@ -1,0 +1,224 @@
+﻿@font-face {
+    font-family: Eurostar;
+    src: url(../font/Eurostar/eurostarblack.ttf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(180deg, #f8fafb 0%, #eef5fc 35%, #f7efe6 100%);
+    color: #1d2f3a;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+header {
+    background: linear-gradient(135deg, rgba(16, 25, 53, 0.82), rgba(62, 86, 122, 0.72)),
+        url("../../../image/imageMADA/baobab.jpg") center/cover no-repeat;
+    min-height: 340px;
+}
+
+.barre {
+    position: fixed !important;
+    left: 0;
+    top: 0;
+    width: 100% !important;
+    height: 76px !important;
+    background: rgba(255, 255, 255, 0.12) !important;
+    backdrop-filter: blur(8px);
+}
+
+#accueil {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 6.5rem 1.5rem 2rem;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    width: 150px;
+    position: relative;
+    z-index: 2;
+}
+
+.titre4 h2 {
+    margin: 1rem 0 0;
+    text-align: center;
+    font-size: clamp(2.3rem, 4vw, 4rem);
+    color: #fff3c9;
+    letter-spacing: 0.08em;
+    font-family: Eurostar, sans-serif;
+}
+
+.nav {
+    margin-top: 1.5rem;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.7rem 1.2rem;
+    border-radius: 999px;
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    font-weight: 600;
+}
+
+.nav a:hover {
+    transform: translateY(-2px);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.mahajanga,
+.explique,
+.forimg {
+    max-width: 1200px;
+    margin: 2rem auto 0;
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(20, 30, 48, 0.08);
+    border-radius: 28px;
+    box-shadow: 0 18px 36px rgba(16, 34, 45, 0.08);
+    padding: 1.5rem;
+}
+
+.mahajanga {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.mahajanga p,
+.explique,
+.forimg h2,
+.img11 h2,
+.img22 h2,
+.img33 h2,
+.img44 h2,
+.case h3 {
+    color: #2c4252;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.mahajanga strong {
+    color: #d32f2f;
+    font-size: 1.7rem;
+    font-family: Eurostar, sans-serif;
+}
+
+.villemajunga {
+    display: flex;
+    justify-content: center;
+}
+
+.villemajunga img,
+.img11 img,
+.img22 img,
+.img33 img,
+.img44 img {
+    width: 100%;
+    border-radius: 22px;
+    object-fit: cover;
+    box-shadow: 0 18px 32px rgba(25, 38, 45, 0.12);
+    transition: transform 0.3s ease;
+}
+
+.villemajunga img:hover,
+.img11 img:hover,
+.img22 img:hover,
+.img33 img:hover,
+.img44 img:hover {
+    transform: translateY(-4px) scale(1.01);
+}
+
+.case h3 {
+    margin: 0 0 0.8rem;
+    font-family: comicbd, sans-serif;
+    font-size: clamp(1.5rem, 2vw, 2rem);
+}
+
+.forimg {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.2rem;
+}
+
+.img11,
+.img22,
+.img33,
+.img44 {
+    display: grid;
+    gap: 0.8rem;
+}
+
+.img11 h2,
+.img22 h2,
+.img33 h2,
+.img44 h2 {
+    margin: 0;
+    font-size: 0.95rem;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+@media (max-width: 900px) {
+
+    .mahajanga,
+    .forimg {
+        grid-template-columns: 1fr;
+    }
+
+    .nav ul {
+        gap: 0.5rem;
+    }
+
+    .nav a {
+        padding: 0.6rem 0.9rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 640px) {
+    #accueil {
+        padding-top: 5.4rem;
+    }
+
+    .nav ul {
+        justify-content: flex-start;
+    }
+
+    .nav a {
+        flex: 1 1 calc(50% - 0.5rem);
+    }
+
+    .mahajanga,
+    .explique,
+    .forimg {
+        padding: 1rem;
+    }
+}

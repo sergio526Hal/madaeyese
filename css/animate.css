@@ -1,0 +1,26 @@
+@font-face {
+    font-family: moi;
+    src: url(../AdobeXd/Fonts/Eurostar/eurostarblack.ttf);
+}
+
+@font-face {
+    font-family: za;
+    src: url(../AdobeXd/Fonts/DM_Sans/DMSans-Medium.ttf);
+}
+
+@font-face {
+    font-family: faly;
+    src: url(../AdobeXd/Fonts/DM_Sans/DMSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: filtif;
+    src: url(../AdobeXd/Fonts/DM_Sans/DMSans-Bold.ttf);
+}
+
+@keyframes mymove {
+    50% {
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(50%);
+    }
+}

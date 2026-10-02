@@ -1,0 +1,254 @@
+﻿@font-face {
+    font-family: Eurostar;
+    src: url(../font/Eurostar/eurostarblack.ttf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(180deg, #fffaf4 0%, #f3efe7 40%, #edf8f6 100%);
+    color: #2b2a2a;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+header {
+    background: linear-gradient(135deg, rgba(52, 36, 31, 0.8), rgba(116, 64, 27, 0.72)),
+        url("../../../image/imageMADA/baobab.jpg") center/cover no-repeat;
+    min-height: 340px;
+}
+
+.barre {
+    position: fixed !important;
+    left: 0;
+    top: 0;
+    width: 100% !important;
+    height: 76px !important;
+    background: rgba(255, 255, 255, 0.12) !important;
+    backdrop-filter: blur(8px);
+}
+
+#accueil {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 6.5rem 1.5rem 2rem;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    width: 150px;
+    position: relative;
+    z-index: 2;
+}
+
+.titre6 h2 {
+    margin: 1rem 0 0;
+    text-align: center;
+    font-size: clamp(2.3rem, 4vw, 4rem);
+    color: #fff3d2;
+    letter-spacing: 0.08em;
+    font-family: Eurostar, sans-serif;
+}
+
+.nav {
+    margin-top: 1.5rem;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.7rem 1.2rem;
+    border-radius: 999px;
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    font-weight: 600;
+}
+
+.nav a:hover {
+    transform: translateY(-2px);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.toliara,
+.talk,
+.img2gauche,
+.img6droite {
+    max-width: 1200px;
+    margin: 2rem auto 0;
+    background: rgba(255, 255, 255, 0.82);
+    border: 1px solid rgba(48, 31, 24, 0.08);
+    border-radius: 28px;
+    box-shadow: 0 18px 36px rgba(33, 29, 24, 0.08);
+    padding: 1.5rem;
+}
+
+.toliara {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.toliara p,
+.talk,
+.img2gauche h3,
+.img6droite h3,
+.imgd1 h3,
+.imgd2 h3,
+.imgd3 h3,
+.imgd4 h3,
+.imgd5 h3,
+.imgd6 h3,
+.imgg1 h3,
+.imgg2 h3,
+.bloc3 h3 {
+    color: #3b2f2f;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.toliara strong {
+    color: #d32f2f;
+    font-size: 1.7rem;
+    font-family: Eurostar, sans-serif;
+}
+
+.villetol {
+    display: flex;
+    justify-content: center;
+}
+
+.villetol img,
+.imgg1 img,
+.imgg2 img,
+.imgd1 img,
+.imgd2 img,
+.imgd3 img,
+.imgd4 img,
+.imgd5 img,
+.imgd6 img {
+    width: 100%;
+    border-radius: 22px;
+    object-fit: cover;
+    box-shadow: 0 18px 30px rgba(32, 27, 24, 0.12);
+    transition: transform 0.3s ease;
+}
+
+.villetol img:hover,
+.imgg1 img:hover,
+.imgg2 img:hover,
+.imgd1 img:hover,
+.imgd2 img:hover,
+.imgd3 img:hover,
+.imgd4 img:hover,
+.imgd5 img:hover,
+.imgd6 img:hover {
+    transform: translateY(-4px) scale(1.01);
+}
+
+.bloc3 h3 {
+    margin: 0 0 0.8rem;
+    font-family: comicbd, sans-serif;
+    font-size: clamp(1.5rem, 2vw, 2rem);
+}
+
+.talk {
+    display: grid;
+    gap: 1rem;
+}
+
+.img2gauche,
+.img6droite {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.imgg1,
+.imgg2,
+.imgd1,
+.imgd2,
+.imgd3,
+.imgd4,
+.imgd5,
+.imgd6 {
+    display: grid;
+    gap: 0.8rem;
+}
+
+.imgg1 h3,
+.imgg2 h3,
+.imgd1 h3,
+.imgd2 h3,
+.imgd3 h3,
+.imgd4 h3,
+.imgd5 h3,
+.imgd6 h3 {
+    margin: 0;
+    font-size: 0.95rem;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+@media (max-width: 900px) {
+
+    .toliara,
+    .img2gauche,
+    .img6droite {
+        grid-template-columns: 1fr;
+    }
+
+    .nav ul {
+        gap: 0.5rem;
+    }
+
+    .nav a {
+        padding: 0.6rem 0.9rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 640px) {
+    #accueil {
+        padding-top: 5.4rem;
+    }
+
+    .nav ul {
+        justify-content: flex-start;
+    }
+
+    .nav a {
+        flex: 1 1 calc(50% - 0.5rem);
+    }
+
+    .toliara,
+    .talk,
+    .img2gauche,
+    .img6droite {
+        padding: 1rem;
+    }
+}

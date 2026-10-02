@@ -1,0 +1,411 @@
+﻿@font-face {
+    font-family: Eurostar;
+    src: url(../font/Eurostar/eurostarblack.ttf);
+}
+
+@font-face {
+    font-family: comicbd;
+    src: url(../font/comicbd.ttf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(180deg, #f8fafc 0%, #eef8f4 40%, #f6f1e7 100%);
+    color: #1d2d2a;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+header {
+    background: linear-gradient(135deg, rgba(14, 35, 46, 0.82), rgba(13, 97, 81, 0.72)),
+        url("../../../image/imageMADA/baobab.jpg") center/cover no-repeat;
+    min-height: 340px;
+}
+
+.barre {
+    position: fixed !important;
+    left: 0;
+    top: 0;
+    width: 100% !important;
+    height: 76px !important;
+    background: rgba(255, 255, 255, 0.12) !important;
+    backdrop-filter: blur(6px);
+}
+
+#accueil {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 6.5rem 1.5rem 2rem;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    width: 150px;
+    z-index: 2;
+    position: relative;
+}
+
+.titre2 h2 {
+    margin: 1rem 0 0;
+    text-align: center;
+    font-size: clamp(2.3rem, 4vw, 4rem);
+    color: #fff3bd;
+    letter-spacing: 0.08em;
+    font-family: Eurostar, sans-serif;
+}
+
+.nav {
+    margin-top: 1.5rem;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.7rem 1.2rem;
+    border-radius: 999px;
+    color: #fff;
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    font-weight: 600;
+}
+
+.nav a:hover {
+    transform: translateY(-2px);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.antsiranana,
+.text,
+.suite,
+.ramena,
+.lac,
+.point,
+.sixphoto {
+    max-width: 1200px;
+    margin: 2rem auto 0;
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(17, 39, 35, 0.08);
+    border-radius: 28px;
+    padding: 1.5rem;
+    box-shadow: 0 18px 36px rgba(16, 30, 38, 0.08);
+}
+
+.antsiranana {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.antsiranana p,
+.text,
+.phrase,
+.suite p,
+.suite h4,
+.ramena p,
+.ramena h4,
+.ramena h5,
+.img1 h2,
+.img2 h2,
+.img3 h2,
+.img4 h2,
+.img5 h2,
+.img6 h2,
+.lac h2,
+.point h3 {
+    color: #24433e;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.antsiranana strong {
+    color: #d32f2f;
+    font-size: 1.7rem;
+    font-family: Eurostar, sans-serif;
+}
+
+.plage,
+.villefia,
+.villemajunga,
+.villetoamasina,
+.villetol,
+.lac,
+.suite img {
+    position: relative;
+}
+
+.plage img,
+.villefia img,
+.villemajunga img,
+.villetoamasina img,
+.villetol img,
+.text img,
+.lac img,
+.suite img,
+.img1 img,
+.img2 img,
+.img3 img,
+.img4 img,
+.img5 img,
+.img6 img,
+.lemur img,
+.cameleon img,
+.tortue img {
+    width: 100%;
+    border-radius: 22px;
+    object-fit: cover;
+    box-shadow: 0 20px 34px rgba(30, 42, 44, 0.12);
+    transition: transform 0.3s ease;
+}
+
+.plage img:hover,
+.villefia img:hover,
+.villemajunga img:hover,
+.villetoamasina img:hover,
+.villetol img:hover,
+.text img:hover,
+.lac img:hover,
+.suite img:hover,
+.img1 img:hover,
+.img2 img:hover,
+.img3 img:hover,
+.img4 img:hover,
+.img5 img:hover,
+.img6 img:hover,
+.lemur img:hover,
+.cameleon img:hover,
+.tortue img:hover {
+    transform: translateY(-4px) scale(1.01);
+}
+
+.text {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.text h2,
+.lac h2,
+.img1 h2,
+.img2 h2,
+.img3 h2,
+.img4 h2,
+.img5 h2,
+.img6 h2 {
+    margin-top: 0.8rem;
+    font-size: 0.95rem;
+    text-transform: capitalize;
+    color: #1f4a42;
+    font-weight: 700;
+}
+
+.sixphoto {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.2rem;
+}
+
+.img1,
+.img2,
+.img3,
+.img4,
+.img5,
+.img6 {
+    background: #fff;
+    border-radius: 18px;
+    overflow: hidden;
+    padding: 0.5rem;
+}
+
+.lac {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.suite {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.suite h3,
+.point h3,
+.ramena h4,
+.ramena h5 {
+    margin: 0 0 1rem;
+    font-family: comicbd, sans-serif;
+    font-size: clamp(1.5rem, 2vw, 2rem);
+    color: #243d35;
+}
+
+.ramena {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+    align-items: center;
+}
+
+.ramena>div {
+    display: grid;
+    gap: 0.8rem;
+}
+
+@media (max-width: 900px) {
+
+    .antsiranana,
+    .text,
+    .suite,
+    .ramena,
+    .lac,
+    .sixphoto {
+        grid-template-columns: 1fr;
+    }
+
+    .nav ul {
+        gap: 0.5rem;
+    }
+
+    .nav a {
+        padding: 0.6rem 0.9rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 640px) {
+    #accueil {
+        padding-top: 5.4rem;
+    }
+
+    .nav ul {
+        justify-content: flex-start;
+    }
+
+    .nav a {
+        flex: 1 1 calc(50% - 0.5rem);
+    }
+
+    .antsiranana,
+    .text,
+    .suite,
+    .ramena,
+    .lac,
+    .point,
+    .sixphoto {
+        padding: 1rem;
+    }
+}
+
+margin-top: 135%;
+font-family: comicbd;
+font-size: 20px;
+}
+
+.suite p {
+    float: right;
+    margin-top: 52px;
+    margin-right: 7%;
+    font-family: arial;
+}
+
+.geo h4 {
+    float: right;
+    margin-right: 47%;
+    color: red;
+    margin-top: 60px;
+    font-family: comicbd;
+    font-size: 20px;
+}
+
+.geo p {
+    font-family: arial;
+}
+
+.ramena h4 {
+    float: left;
+    position: absolute;
+    font-family: arial;
+    color: #474847;
+    margin-top: 170%;
+    font-family: comicbd;
+    margin-left: 90px;
+    font-size: 22px;
+}
+
+.ramena img {
+    width: 30em;
+    height: 19.9em;
+    position: absolute;
+    margin-top: 176em;
+    margin-left: 80px;
+}
+
+.ramena img:hover {
+    transform: scale(1.1);
+    transition: 1s;
+    box-shadow: 6px 8px 40px rgb(93, 208, 240);
+}
+
+.ramena h5 {
+    float: left;
+    position: absolute;
+    font-family: arial;
+    color: #08cd08;
+    margin-top: 208%;
+    font-family: comicbd;
+    margin-left: 100px;
+    font-size: 22px;
+}
+
+.ramena p {
+    float: right;
+    margin-top: 280px;
+    margin-right: 48%;
+    font-family: arial;
+}
+
+#plage img {
+    width: 30em;
+    height: auto;
+    float: right;
+    margin-top: 176em;
+    margin-left: 700px;
+}
+
+#plage h5 {
+    float: left;
+    position: absolute;
+    font-family: arial;
+    color: #08cd08;
+    margin-top: 208%;
+    font-family: comicbd;
+    margin-left: 32.8em;
+    font-size: 22px;
+}

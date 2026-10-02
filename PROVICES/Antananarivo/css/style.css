@@ -1,0 +1,547 @@
+﻿@font-face {
+    font-family: Eurostar;
+    src: url(../font/Eurostar/eurostarblack.ttf);
+}
+
+@font-face {
+    font-family: comicbd;
+    src: url(../font/comicbd.ttf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(180deg, #f8fafc, #eef7f4 45%, #f8f5ed 100%);
+    color: #18312d;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+header {
+    position: relative;
+    background: linear-gradient(135deg, rgba(13, 36, 29, 0.82), rgba(28, 73, 63, 0.8)),
+        url("../../../image/imageMADA/baobab.jpg") center/cover no-repeat;
+    min-height: 340px;
+    overflow: hidden;
+}
+
+.barre {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 76px !important;
+    background: rgba(255, 255, 255, 0.12) !important;
+    backdrop-filter: blur(8px);
+    z-index: 1000;
+}
+
+#accueil {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 6rem 1.5rem 2rem;
+    position: relative;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 150px;
+    border-radius: 18px;
+    position: relative;
+    z-index: 2;
+}
+
+.titre1 h2 {
+    margin: 1rem 0 0;
+    text-align: center;
+    font-size: clamp(2.2rem, 4vw, 4rem);
+    letter-spacing: 0.08em;
+    color: #fff6d7;
+    font-family: Eurostar, sans-serif;
+}
+
+.nav {
+    position: relative;
+    z-index: 2;
+    margin-top: 1.5rem;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.7rem 1.2rem;
+    border-radius: 999px;
+    text-decoration: none;
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    font-weight: 600;
+    transition: transform 0.25s ease, background 0.25s ease;
+}
+
+.nav a:hover {
+    transform: translateY(-2px);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.antananarivo,
+.exp_rova,
+.p2,
+.place,
+.farm,
+.zone,
+.quatrimg {
+    max-width: 1200px;
+    margin: 2rem auto 0;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(15, 35, 55, 0.08);
+    border-radius: 26px;
+    box-shadow: 0 18px 40px rgba(20, 38, 42, 0.08);
+}
+
+.antananarivo {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.antananarivo p,
+.exp_rova p,
+.p2 p,
+.place p,
+.farm p,
+.zone p,
+.croc p,
+.croc2 p,
+.explique,
+.text,
+.phrase,
+.talk,
+.texto,
+.suite p,
+.ramena p,
+.antsiranana p,
+.mahajanga p,
+.toamasina p,
+.toliara p,
+.lemur h2,
+.cameleon h2,
+.tortue h2,
+.imgd1 h3,
+.imgd2 h3,
+.imgd3 h3,
+.imgd4 h3,
+.imgd5 h3,
+.imgd6 h3,
+.imgg1 h3,
+.imgg2 h3,
+.part4 h4,
+.part3 h4,
+.part2 h4,
+.part1 h4,
+.pict1 h5,
+.pict2 h5,
+.pict3 h5,
+.shoot1 h5,
+.shoot2 h5,
+.shoot3 h5,
+.img11 h2,
+.img22 h2,
+.img33 h2,
+.img44 h2,
+.img1 h2,
+.img2 h2,
+.img3 h2,
+.img4 h2,
+.img5 h2,
+.img6 h2,
+.lac h2,
+.suite h4,
+.suite h3,
+.place h3,
+.zone h3,
+.case h3,
+.bloc2 h3,
+.bloc3 h3,
+.form2 h3,
+.form3 h3,
+.form4 h3,
+.form5 h3,
+.form6 h3,
+.point h3 {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #29463d;
+}
+
+.antananarivo strong,
+.antsiranana strong,
+.fianarantsoa strong,
+.mahajanga strong,
+.toamasina strong,
+.toliara strong {
+    font-family: Eurostar, sans-serif;
+    color: #d62d2d;
+    font-size: 1.6rem;
+}
+
+.villetana,
+.plage,
+.villefia,
+.villemajunga,
+.villetoamasina,
+.villetol {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.villetana img,
+.plage img,
+.villefia img,
+.villemajunga img,
+.villetoamasina img,
+.villetol img,
+.zone img,
+.text img,
+.part img,
+.part1 img,
+.part2 img,
+.part3 img,
+.part4 img,
+.croc img,
+.farm img,
+.lemur img,
+.cameleon img,
+.tortue img,
+.suite img,
+.lac img,
+.img11 img,
+.img22 img,
+.img33 img,
+.img44 img,
+.img1 img,
+.img2 img,
+.img3 img,
+.img4 img,
+.img5 img,
+.img6 img,
+.imgg1 img,
+.imgg2 img,
+.imgd1 img,
+.imgd2 img,
+.imgd3 img,
+.imgd4 img,
+.imgd5 img,
+.imgd6 img {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+    box-shadow: 0 18px 32px rgba(23, 35, 35, 0.12);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.villetana img:hover,
+.plage img:hover,
+.villefia img:hover,
+.villemajunga img:hover,
+.villetoamasina img:hover,
+.villetol img:hover,
+.zone img:hover,
+.text img:hover,
+.part img:hover,
+.part1 img:hover,
+.part2 img:hover,
+.part3 img:hover,
+.part4 img:hover,
+.farm img:hover,
+.lemur img:hover,
+.cameleon img:hover,
+.tortue img:hover,
+.suite img:hover,
+.lac img:hover,
+.img11 img:hover,
+.img22 img:hover,
+.img33 img:hover,
+.img44 img:hover,
+.img1 img:hover,
+.img2 img:hover,
+.img3 img:hover,
+.img4 img:hover,
+.img5 img:hover,
+.img6 img:hover,
+.imgg1 img:hover,
+.imgg2 img:hover,
+.imgd1 img:hover,
+.imgd2 img:hover,
+.imgd3 img:hover,
+.imgd4 img:hover,
+.imgd5 img:hover,
+.imgd6 img:hover {
+    transform: translateY(-4px) scale(1.01);
+    box-shadow: 0 22px 38px rgba(20, 38, 42, 0.16);
+}
+
+.zone,
+.place,
+.farm,
+.form2,
+.form3,
+.form4,
+.form5,
+.form6,
+.point,
+.case,
+.bloc,
+.bloc2,
+.bloc3,
+.suite,
+.ramena,
+.sixphoto,
+.lac,
+.quatrimg,
+.forimg,
+.img2gauche,
+.img6droite {
+    position: relative;
+}
+
+.zone h3,
+.case h3,
+.bloc h3,
+.bloc2 h3,
+.bloc3 h3,
+.place h3,
+.point h3,
+.form2 h3,
+.form3 h3,
+.form4 h3,
+.form5 h3,
+.form6 h3,
+.suite h3,
+.ramena h4,
+.logo {
+    color: #1d3f37;
+    font-weight: 800;
+}
+
+.zone h3,
+.case h3,
+.bloc h3,
+.bloc2 h3,
+.bloc3 h3,
+.place h3,
+.point h3,
+.form2 h3,
+.form3 h3,
+.form4 h3,
+.form5 h3,
+.form6 h3 {
+    margin: 0 0 1rem;
+    font-family: comicbd, sans-serif;
+    font-size: clamp(1.3rem, 2vw, 2rem);
+}
+
+.exp_rova,
+.p2,
+.text,
+.explique,
+.phrase,
+.talk,
+.texto,
+.suite,
+.ramena {
+    padding: 2rem 1.5rem;
+}
+
+.quatrimg,
+.sixphoto,
+.forimg,
+.img2gauche,
+.img6droite {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.imga,
+.imgb,
+.imgc,
+.imgd,
+.img1,
+.img2,
+.img3,
+.img4,
+.img5,
+.img6,
+.img11,
+.img22,
+.img33,
+.img44,
+.imgg1,
+.imgg2,
+.imgd1,
+.imgd2,
+.imgd3,
+.imgd4,
+.imgd5,
+.imgd6,
+.lemur,
+.cameleon,
+.tortue {
+    position: relative;
+    width: 100%;
+}
+
+.quatrimg h2,
+.img11 h2,
+.img22 h2,
+.img33 h2,
+.img44 h2,
+.img1 h2,
+.img2 h2,
+.img3 h2,
+.img4 h2,
+.img5 h2,
+.img6 h2,
+.imgg1 h3,
+.imgg2 h3,
+.imgd1 h3,
+.imgd2 h3,
+.imgd3 h3,
+.imgd4 h3,
+.imgd5 h3,
+.imgd6 h3,
+.lemur h2,
+.cameleon h2,
+.tortue h2,
+.lac h2,
+.text h2,
+.suite h4,
+.ramena h5,
+.ramena h4,
+.part1 h4,
+.part2 h4,
+.part3 h4,
+.part4 h4,
+.pict1 h5,
+.pict2 h5,
+.pict3 h5,
+.shoot1 h5,
+.shoot2 h5,
+.shoot3 h5 {
+    position: static;
+    display: block;
+    margin-top: 0.8rem;
+    font-size: 0.95rem;
+    text-transform: capitalize;
+    font-weight: 700;
+    color: #17463f;
+}
+
+.farm {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.farm h3 {
+    grid-column: 1 / -1;
+    margin: 0;
+    font-family: comicbd, sans-serif;
+    font-size: clamp(1.5rem, 2vw, 2rem);
+    color: #2b3d2f;
+}
+
+.farm p {
+    margin: 0;
+}
+
+.farm img {
+    max-height: 300px;
+}
+
+@media (max-width: 900px) {
+
+    .antananarivo,
+    .farm,
+    .quatrimg,
+    .sixphoto,
+    .forimg,
+    .img2gauche,
+    .img6droite {
+        grid-template-columns: 1fr;
+    }
+
+    .antananarivo {
+        display: block;
+    }
+
+    .nav ul {
+        gap: 0.4rem;
+    }
+
+    .nav a {
+        padding: 0.6rem 0.9rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 640px) {
+    #accueil {
+        padding-top: 5.5rem;
+    }
+
+    .nav ul {
+        justify-content: flex-start;
+    }
+
+    .nav a {
+        flex: 1 1 calc(50% - 0.5rem);
+    }
+
+    .titre1 h2 {
+        letter-spacing: 0.04em;
+    }
+
+    .antananarivo,
+    .exp_rova,
+    .p2,
+    .place,
+    .farm,
+    .zone,
+    .quatrimg,
+    .forimg,
+    .img2gauche,
+    .img6droite {
+        padding: 1rem;
+    }
+}

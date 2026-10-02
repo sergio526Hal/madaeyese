@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mada Eyes, découvrez Madagascar à travers une expérience immersive et moderne." />
+  <title>Mada Eyes | Tourisme à Madagascar</title>
+  <link rel="shortcut icon" href="image/logo_MadaEyes.png" />
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="stylesheet" href="css/rsponsive.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="topbar"></div>
+    <nav class="main-nav" aria-label="Navigation principale">
+      <a href="#accueil" class="brand">
+        <img src="image/logo_MadaEyes.png" alt="Logo Mada Eyes" />
+      </a>
+      <div class="nav-links">
+        <a href="#accueil">Accueil</a>
+        <a href="#apropos">À propos</a>
+        <a href="#province">Provinces</a>
+        <a href="#inscription" class="btn btn-light">S'inscrire</a>
+        <a href="#inscription" class="btn btn-gold">Connecter</a>
+      </div>
+    </nav>
+
+    <section class="hero" id="accueil">
+      <div class="hero-copy">
+        <p class="eyebrow">Découvrez l'île rouge</p>
+        <h1>Bienvenue à Madagascar</h1>
+        <p class="lead">
+          Explorez les paysages uniques, les villes historiques et la culture
+          Malagasy depuis chez vous.
+        </p>
+        <div class="hero-actions">
+          <a href="#province" class="btn btn-primary">Commencer</a>
+          <a href="#apropos" class="btn btn-secondary">Découvrir</a>
+        </div>
+      </div>
+
+      <div class="hero-panel">
+        <form class="search-panel" id="searchForm">
+          <label for="searchBar">Recherche rapide</label>
+          <div class="search-row">
+            <input type="text" id="searchBar" placeholder="Rechercher un mot-clé" />
+            <button type="submit">Rechercher</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section class="about" id="apropos">
+      <div class="section-heading">
+        <p class="eyebrow">À propos</p>
+        <h2>Une aventure immersive au cœur de Madagascar</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-image">
+          <img src="image/imageMADA/telovavy.jpg" alt="Paysage de Madagascar" />
+        </div>
+        <div class="about-content">
+          <p>
+            Mada Eyes a été créé pour faire vivre la beauté de Madagascar à
+            travers des images, des récits et des découvertes exceptionnelles.
+          </p>
+          <p>
+            Nous mettons en avant les traditions, les trésors naturels et les
+            destinations incontournables de l'île la plus fascinante de l'océan
+            Indien.
+          </p>
+          <a href="#province" class="btn btn-primary">Explorer les provinces</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="showcase" id="province">
+      <div class="section-heading">
+        <p class="eyebrow">Provinces</p>
+        <h2>L'île touristique à explorer</h2>
+      </div>
+
+      <div class="province-grid">
+        <article class="province-card">
+          <a href="PROVICES/Antananarivo/antananarivo.html">
+            <img src="image/Antananarivo.jpg" alt="Antananarivo" />
+          </a>
+          <h3>Antananarivo</h3>
+        </article>
+
+        <article class="province-card">
+          <a href="PROVICES/Antsiranana/antsiranana.html">
+            <img src="image/Antsiranana.jpg" alt="Antsiranana" />
+          </a>
+          <h3>Antsiranana</h3>
+        </article>
+
+        <article class="province-card">
+          <a href="PROVICES/Fianarantsoa/fianarantsoa.html">
+            <img src="image/fianarantsoa.jpg" alt="Fianarantsoa" />
+          </a>
+          <h3>Fianarantsoa</h3>
+        </article>
+
+        <article class="province-card">
+          <a href="PROVICES/Mahajanga/mahajanga.html">
+            <img src="image/majunga ville.jpg" alt="Mahajanga" />
+          </a>
+          <h3>Mahajanga</h3>
+        </article>
+
+        <article class="province-card">
+          <a href="PROVICES/Toamasina/toamasina.html">
+            <img src="image/Toamasina ville.jpg" alt="Toamasina" />
+          </a>
+          <h3>Toamasina</h3>
+        </article>
+
+        <article class="province-card">
+          <a href="PROVICES/Toliara/toliara.html">
+            <img src="image/Toliara.jpg" alt="Toliara" />
+          </a>
+          <h3>Toliara</h3>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="inscription">
+    <div class="footer-copy">
+      <p class="eyebrow">Inscription</p>
+      <h2>Prêt à découvrir Madagascar ?</h2>
+    </div>
+
+    <div class="signup-wrap">
+      <button id="startbutton" class="btn btn-primary signup-toggle" type="button">
+        Formulaire d'inscription
+      </button>
+
+      <form id="myform" class="signup-form" method="POST" action="https://formspree.io/f/mzezgnvr">
+        <label for="name">Nom</label>
+        <input type="text" id="name" name="name" placeholder="Votre nom" required />
+
+        <label for="firstname">Prénom</label>
+        <input type="text" id="firstname" name="firstname" placeholder="Votre prénom" required />
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="Votre e-mail" required />
+
+        <label for="address">Adresse</label>
+        <input type="text" id="address" name="address" placeholder="Votre adresse" />
+
+        <button type="submit" class="btn btn-gold">S'inscrire</button>
+        <p class="form-status" aria-live="polite"></p>
+      </form>
+    </div>
+
+    <div class="socials" aria-label="Réseaux sociaux">
+      <a href="https://www.facebook.com" target="_blank" rel="noreferrer">Facebook</a>
+      <a href="https://www.instagram.com" target="_blank" rel="noreferrer">Instagram</a>
+      <a href="https://www.twitter.com" target="_blank" rel="noreferrer">Twitter</a>
+      <a href="mailto:madaeyes@gmail.com">madaeyes@gmail.com</a>
+    </div>
+  </footer>
+
+  <script src="script/script.js" defer></script>
+</body>
+
+</html>

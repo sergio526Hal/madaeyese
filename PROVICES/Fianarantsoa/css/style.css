@@ -1,0 +1,223 @@
+﻿@font-face {
+    font-family: Eurostar;
+    src: url(../font/Eurostar/eurostarblack.ttf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(180deg, #f7faf7 0%, #eef7f0 35%, #f6f2e9 100%);
+    color: #20342d;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+header {
+    background: linear-gradient(135deg, rgba(12, 35, 25, 0.8), rgba(48, 86, 46, 0.72)),
+        url("../../../image/imageMADA/baobab.jpg") center/cover no-repeat;
+    min-height: 340px;
+}
+
+.barre {
+    position: fixed !important;
+    left: 0;
+    top: 0;
+    width: 100% !important;
+    height: 76px !important;
+    background: rgba(255, 255, 255, 0.12) !important;
+    backdrop-filter: blur(8px);
+}
+
+#accueil {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 6.5rem 1.5rem 2rem;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    width: 150px;
+    position: relative;
+    z-index: 2;
+}
+
+.titre3 h2 {
+    margin: 1rem 0 0;
+    text-align: center;
+    font-size: clamp(2.3rem, 4vw, 4rem);
+    color: #fff5d6;
+    letter-spacing: 0.08em;
+    font-family: Eurostar, sans-serif;
+}
+
+.nav {
+    margin-top: 1.5rem;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.7rem 1.2rem;
+    border-radius: 999px;
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    font-weight: 600;
+}
+
+.nav a:hover {
+    transform: translateY(-2px);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.fianarantsoa,
+.parol,
+.phot {
+    max-width: 1200px;
+    margin: 2rem auto 0;
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(14, 37, 26, 0.08);
+    border-radius: 28px;
+    box-shadow: 0 18px 36px rgba(22, 36, 24, 0.08);
+    padding: 1.5rem;
+}
+
+.fianarantsoa {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.fianarantsoa p,
+.parol,
+.phot,
+.parol h2 {
+    color: #284636;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.fianarantsoa strong {
+    color: #d32d2d;
+    font-size: 1.7rem;
+    font-family: Eurostar, sans-serif;
+}
+
+.villefia {
+    display: flex;
+    justify-content: center;
+}
+
+.villefia img,
+.parol img,
+.phot img {
+    width: 100%;
+    border-radius: 22px;
+    object-fit: cover;
+    box-shadow: 0 18px 30px rgba(21, 43, 28, 0.12);
+    transition: transform 0.3s ease;
+}
+
+.villefia img:hover,
+.parol img:hover,
+.phot img:hover {
+    transform: translateY(-4px) scale(1.01);
+}
+
+.bloc h3 {
+    margin: 0 0 0.8rem;
+    font-family: comicbd, sans-serif;
+    font-size: clamp(1.5rem, 2vw, 2rem);
+    color: #203d31;
+}
+
+.parol {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.parol img {
+    border-radius: 50%;
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+.parol h2 {
+    margin-top: 1rem;
+    font-size: 0.95rem;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+.phot {
+    display: flex;
+    justify-content: center;
+}
+
+.phot img {
+    max-height: 320px;
+    object-fit: cover;
+}
+
+@media (max-width: 900px) {
+
+    .fianarantsoa,
+    .parol {
+        grid-template-columns: 1fr;
+    }
+
+    .nav ul {
+        gap: 0.5rem;
+    }
+
+    .nav a {
+        padding: 0.6rem 0.9rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 640px) {
+    #accueil {
+        padding-top: 5.3rem;
+    }
+
+    .nav ul {
+        justify-content: flex-start;
+    }
+
+    .nav a {
+        flex: 1 1 calc(50% - 0.5rem);
+    }
+
+    .fianarantsoa,
+    .parol,
+    .phot {
+        padding: 1rem;
+    }
+}

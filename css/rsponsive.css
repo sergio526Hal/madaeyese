@@ -1,0 +1,49 @@
+@media (max-width: 900px) {
+
+    .about-grid,
+    .province-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 640px) {
+    .main-nav {
+        padding-top: 0.5rem;
+    }
+
+    .brand img {
+        width: 140px;
+    }
+
+    .nav-links {
+        gap: 0.6rem;
+    }
+
+    .nav-links a {
+        flex: 1 1 46%;
+        font-size: 0.9rem;
+    }
+
+    .hero-copy h1 {
+        font-size: 2.5rem;
+    }
+
+    .about-grid,
+    .province-grid,
+    .signup-form {
+        grid-template-columns: 1fr;
+    }
+
+    .search-panel {
+        padding: 1rem;
+    }
+
+    .search-row button,
+    .search-row input {
+        width: 100%;
+    }
+
+    .socials {
+        flex-direction: column;
+    }
+}

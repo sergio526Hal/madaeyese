@@ -1,0 +1,362 @@
+/* Général */
+
+.body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Fond clair pour une bonne lisibilité */
+    color: #333; /* Texte sombre pour un bon contraste */
+}
+.forum_actif{
+    display: flex;
+    width:900px;
+    height: auto;
+    padding:10px;
+    overflow: hidden;
+}
+.profile-wrapper {
+    z-index: 2; /* Au-dessus du fond */
+    display: flex;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7); /* Fond sombre pour le profil */
+    padding: 6px;
+    margin-left: 30px;
+    border-radius: 50px;
+}
+
+.profile-avatar {
+    margin-right: 10px;
+    width: 50px;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #ffd13b;
+}
+
+.profile-info {
+    color: white;
+}
+
+.profile-name {
+    font-weight: bold;
+    margin: 0;
+}
+
+.profile-address {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+.profile-status {
+    margin: 0;
+    font-size: 0.8em;
+    color: #00ff00; /* Couleur pour le statut en ligne */
+}
+
+
+.forum_header {
+    margin: 0;
+    color: white;
+    background-image: url(../image/imageMADA/baobab.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0 0 100% 100%/ 0 0 30% 30%;
+    text-align: center;
+    border: 0;
+    height: 500px;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+}
+
+.forum_header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Opacité sur l'image de fond */
+    z-index: 1;
+}
+
+.forum_header h1 {
+    font-family: 'Arial', sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #ffffff;
+    border-bottom: 5px solid #ffd13b;
+    padding-bottom: 10px;
+    display: inline-block;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(252, 173, 4, 0.2);
+    position: relative;
+    z-index: 2; /* Pour être au-dessus du fond assombri */
+}
+
+.forum_madaeyes {
+    width: 400px;
+    float: left;
+    position: relative;
+    z-index: 2; /* Pour être au-dessus du fond assombri */
+}
+
+.navigateur ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 90px;
+    position: relative;
+    z-index: 2; /* Pour être au-dessus du fond assombri */
+}
+
+.navigateur ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.navigateur ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    box-shadow: 0 5px 10px rgba(252, 173, 4, 0.2);
+
+}
+
+.navigateur ul li a:hover {
+    text-decoration: underline;
+    color: #fafafa;
+} 
+
+
+.main {
+    padding: 20px;
+    max-width: 960px;
+    margin: auto;
+}
+
+section {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #333; /* Couleur de texte sombre pour une bonne lisibilité */
+}
+
+.form {
+    margin-top: 20px;
+}
+
+.form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555; /* Gris foncé pour les labels */
+}
+
+.form select, .form input[type="text"], form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form textarea {
+    resize: vertical;
+}
+
+.form button {
+    background-color: #4a90e2; /* Bleu vif pour le bouton */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.form button:hover {
+    background-color: #357abd; /* Bleu plus foncé pour le survol */
+}
+
+
+.thread {
+    background-color: #f6f6f7;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    width:600px;
+    margin-left: 25%;
+    padding: 20px;
+}
+
+.thread h3 {
+    font-size: 1.6em;
+    margin-bottom: 10px;
+    color: #4a90e2;
+    text-align: center;
+}
+
+.thread p {
+    font-size: 1.1em;
+    line-height: 1.5;
+    color: #555;
+}
+
+.thread:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.thread-footer {
+    margin-top: 15px;
+    font-size: 0.9em;
+    color: #999;
+    text-align: right;
+}
+
+.button {
+    background-color: #4a90e2;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #357abd;
+}
+
+/* discussion.css */
+.user-info {
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: right;
+    font-size: 1.2em;
+    border-bottom: 1px solid #ddd;
+}
+
+.user-info p {
+    margin: 0;
+    display: inline-block;
+}
+
+.user-info a {
+    margin-left: 20px;
+    font-size: 0.9em;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.user-info a:hover {
+    text-decoration: underline;
+}
+
+.footerforum
+{
+    background-color: #492101;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logout {
+    color: #ffd13b;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.logout:hover {
+    color: #ffb702;
+}
+
+.footerforum p {
+    margin: 10px 0;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-wrapper {
+        top: 10px;
+        left: 10px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    nav ul {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-avatar {
+        margin-bottom: 10px;
+    }
+
+    .avatar {
+        width: 40px;
+        height: 40px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    nav ul li a {
+        font-size: 0.9em;
+    }
+}
+
+

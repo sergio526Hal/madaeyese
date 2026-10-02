@@ -1,0 +1,43 @@
+# Système Windows
+Thumbs.db
+desktop.ini
+*.lnk
+
+# Fichiers temporaires
+*.tmp
+*.temp
+*.log
+
+# Éditeurs
+.vscode/
+.idea/
+
+# Fichiers de sauvegarde
+*.bak
+*.old
+*~
+
+# Fichiers cache
+.cache/
+tmp/
+temp/
+
+# Fichiers générés
+dist/
+build/
+
+# Environnement local
+.env
+.env.local
+
+# Bases de données temporaires
+*.sqlite
+*.sqlite3
+
+# Uploads utilisateurs
+forum/uploads/
+
+# Fichiers lourds temporaires
+*.zip
+*.rar
+*.7z

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+      <button id="startbutton">
+        commencer
+      </button>
+      <form id="myform" style="display: none;">
+        <label for="name">Nom:</label>
+        <input type="text" id="name" name="name" /><br /><br />
+        <label for="firstName">Prénom:</label>
+        <input type="text" id="firstname" name="firstname" /><br /><br />
+        <label for="password">Mot de passe:</label>
+        <input type="password" id="password" name="password" /><br /><br />
+        <button type="submit" id="submitbutton">Connecter</button>
+      </form>
+    <script>
+        document.getElementById("startbutton").addEventListener("click",function(){
+            var form = document.getElementById("myform");
+            if(form.style.display==="none"){
+                form.style.display="block";
+            }else{
+                form.style.display="none";
+            }
+            form.classList.add("activeform");
+        });
+    </script>
+  </body>
+</html>

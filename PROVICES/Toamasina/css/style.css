@@ -1,0 +1,224 @@
+﻿@font-face {
+    font-family: Eurostar;
+    src: url(../font/Eurostar/eurostarblack.ttf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(180deg, #f6fbff 0%, #edf8f4 42%, #f7f1e7 100%);
+    color: #1d2d2d;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+header {
+    background: linear-gradient(135deg, rgba(15, 35, 52, 0.8), rgba(24, 98, 82, 0.72)),
+        url("../../../image/imageMADA/baobab.jpg") center/cover no-repeat;
+    min-height: 340px;
+}
+
+.barre {
+    position: fixed !important;
+    left: 0;
+    top: 0;
+    width: 100% !important;
+    height: 76px !important;
+    background: rgba(255, 255, 255, 0.12) !important;
+    backdrop-filter: blur(8px);
+}
+
+#accueil {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 6.5rem 1.5rem 2rem;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    width: 150px;
+    position: relative;
+    z-index: 2;
+}
+
+.titre5 h2 {
+    margin: 1rem 0 0;
+    text-align: center;
+    font-size: clamp(2.3rem, 4vw, 4rem);
+    color: #fff6cc;
+    letter-spacing: 0.08em;
+    font-family: Eurostar, sans-serif;
+}
+
+.nav {
+    margin-top: 1.5rem;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.7rem 1.2rem;
+    border-radius: 999px;
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    font-weight: 600;
+}
+
+.nav a:hover {
+    transform: translateY(-2px);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.toamasina,
+.texto,
+.lemur,
+.cameleon,
+.tortue {
+    max-width: 1200px;
+    margin: 2rem auto 0;
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(17, 37, 42, 0.08);
+    border-radius: 28px;
+    box-shadow: 0 18px 36px rgba(16, 31, 42, 0.08);
+    padding: 1.5rem;
+}
+
+.toamasina {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.toamasina p,
+.texto,
+.lemur h2,
+.cameleon h2,
+.tortue h2,
+.bloc2 h3 {
+    color: #294742;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.toamasina strong {
+    color: #d32f2f;
+    font-size: 1.7rem;
+    font-family: Eurostar, sans-serif;
+}
+
+.villetoamasina {
+    display: flex;
+    justify-content: center;
+}
+
+.villetoamasina img,
+.lemur img,
+.cameleon img,
+.tortue img {
+    width: 100%;
+    border-radius: 22px;
+    object-fit: cover;
+    box-shadow: 0 18px 30px rgba(22, 39, 36, 0.11);
+    transition: transform 0.3s ease;
+}
+
+.villetoamasina img:hover,
+.lemur img:hover,
+.cameleon img:hover,
+.tortue img:hover {
+    transform: translateY(-4px) scale(1.01);
+}
+
+.bloc2 h3 {
+    margin: 0 0 1rem;
+    font-family: comicbd, sans-serif;
+    font-size: clamp(1.5rem, 2vw, 2rem);
+}
+
+.texto {
+    display: grid;
+    gap: 1rem;
+}
+
+.lemur,
+.cameleon,
+.tortue {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+}
+
+.lemur h2,
+.cameleon h2,
+.tortue h2 {
+    margin: 0;
+    font-size: 0.95rem;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+@media (max-width: 900px) {
+
+    .toamasina,
+    .lemur,
+    .cameleon,
+    .tortue {
+        grid-template-columns: 1fr;
+    }
+
+    .nav ul {
+        gap: 0.5rem;
+    }
+
+    .nav a {
+        padding: 0.6rem 0.9rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 640px) {
+    #accueil {
+        padding-top: 5.4rem;
+    }
+
+    .nav ul {
+        justify-content: flex-start;
+    }
+
+    .nav a {
+        flex: 1 1 calc(50% - 0.5rem);
+    }
+
+    .toamasina,
+    .texto,
+    .lemur,
+    .cameleon,
+    .tortue {
+        padding: 1rem;
+    }
+}
